@@ -1,4 +1,5 @@
 import {NavLink} from 'react-router-dom';
+import "./GalleryNavigation.css"
 
 const GalleryNavigation = props => {
     const {galleries} = props;
@@ -14,10 +15,10 @@ const GalleryNavigation = props => {
     // console.log(galleries)
     return(
         <nav>
-        <h1>Galleries</h1> 
+        <h1>Galleries</h1>
         <NavLink to='/'>Homepage</NavLink>
         <ul>
-            {galleryList}   
+            {galleryList}
         </ul>
         </nav>
     )
